@@ -5,6 +5,7 @@ ruby '2.2.2'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'bootstrap', '~> 4.0.0'
+gem 'twitter'
 gem 'haml'
 gem 'figaro'
 gem 'sqlite3'
