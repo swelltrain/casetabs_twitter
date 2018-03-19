@@ -1,4 +1,12 @@
 %h1 Casetabs Twitter
 
-%button.btn.btn-secondary{'data-toggle' => 'tooltip', 'data-placement' => 'top', title: 'This is a tooltip'}
-  My name is Stephen
+%h3 Last 20 Tweets By @casetabs
+
+%table.table
+  %thead
+    %tr
+      %th Text
+  %tbody
+    - @casetab_tweets.each do |tweet|
+      %tr
+        %td= tweet.text
