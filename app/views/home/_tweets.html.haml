@@ -1,0 +1,10 @@
+%h3= "Last 20 Tweets By @#{user}"
+
+%table.table
+  %thead
+    %tr
+      %th Text
+  %tbody
+    - tweets.each do |tweet|
+      %tr
+        %td= raw(formatted_tweet_text(tweet.text))

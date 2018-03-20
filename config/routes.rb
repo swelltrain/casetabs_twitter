@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  get 'user/:user' => 'home#user', as: :user
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
